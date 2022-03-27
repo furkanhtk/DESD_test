@@ -11,10 +11,8 @@ library IEEE;
 -- NONE
 ------------------------------------
 
-entity SyncGenerator is
+entity ClockGenerator is
 	Generic(
-
-		SIMULATION_VS_IMPLEMENTATION    :   STRING(1 to 3) := "SIM";	-- "SIM" or "IMP"
 
 		CLK_PERIOD_NS			:	POSITIVE	RANGE	1	TO	100;	-- clk Period in nanoseconds
 		MIN_KITT_CAR_STEP_MS	:	POSITIVE	RANGE	1	TO	2000;	-- min step period in milliseconds
@@ -24,21 +22,21 @@ entity SyncGenerator is
 	);
 	Port (
 
-		------- Reset/Clock --------
-		reset	:	IN	STD_LOGIC;
+		------- rst/Clock --------
+		rst     :	IN	STD_LOGIC;
 		clk		:	IN	STD_LOGIC;
 		----------------------------
 
 		---------- Speed -----------
-		SWs		:	IN	STD_LOGIC_VECTOR(NUM_OF_SWS-1 downto 0);	-- Switches avaiable on Besys3
-		sync	:	OUT	STD_LOGIC		-- segnale che pulsa quando kit deve shiftare -- signal which pulses when kit has to shift
+		SWs		    :	IN	STD_LOGIC_VECTOR(NUM_OF_SWS-1 downto 0);	-- Switches avaiable on Besys3
+		count_pulse	:	OUT	STD_LOGIC		-- segnale che pulsa quando kit deve shiftare -- signal which pulses when kit has to shift
 		----------------------------
 
 	);
 
-end SyncGenerator;
+end ClockGenerator;
 
-architecture Behavioral of SyncGenerator is
+architecture Behavioral of ClockGenerator is
 
 
 	---------------------- FUNCTION DECLARATION ----------------------
@@ -73,8 +71,12 @@ architecture Behavioral of SyncGenerator is
 
     ---------- TIMER -----------
     constant RANGE_COUNT_FINE		: POSITIVE		:= set_range_count_fine(SIMULATION_VS_IMPLEMENTATION); 
+	
+	
 	-- numero di incrementi del contatore per arrivare ad Dt0 -- number of counter's steps to reach teh Dt0
     constant RANGE_COUNT_COARSE		: POSITIVE		:= 2**NUM_OF_SWS -1;
+	
+	
 	-- numero massimo rappresentabile dagli switch come input -- max number that can be set throught the switches
 	-- 
     ----------------------------
@@ -119,16 +121,16 @@ begin
 
 	----------------------------- PROCESS ------------------------------
 
-	------ Sync Process --------
-	process(reset, clk)
+	------ Clock Process --------
+	process(rst, clk)
 
 	begin
 
-		-- Reset
-		if reset = '1' then
+		-- rst
+		if rst = '1' then
 			count_fine		<= 0;
 			count_coarse	<= 0;
-			sync			<= '0';
+			count_pulse			<= '0';
 
 			select_speed     <= 1;
 			select_speed_reg <= 1;
@@ -147,25 +149,25 @@ begin
 
 
 			-- Count the overflow of count_fine (MIN_KITT_CAR_STEP_MS)
-			sync	<= '0';
+			count_pulse	<= '0';
 
 			if count_fine = RANGE_COUNT_FINE-1 then --se il contatore di step minimi è all'overflow incrementiamo il contatore di Dt0 --if the minimum steps' counter reaches overflow, the Dt0 counter adds +1
 				count_fine		<= 0;
 				count_coarse	<= count_coarse	+1;
 
 				-- Count the overflow of count_coarse (MIN_KITT_CAR_STEP_MS*SWs)
-				if count_coarse = select_speed then --se il contatore di #N Dt0 per lo shift è in overflow sync si alza --if the #N Dt0 counter reaches overflow, syn goes to 1
+				if count_coarse = select_speed then --se il contatore di #N Dt0 per lo shift è in overflow count_pulse si alza --if the #N Dt0 counter reaches overflow, syn goes to 1
 					count_coarse	<= 0;
-					sync			<= '1';
+					count_pulse			<= '1';
 				end if;
 
 			end if;
 
-			-- Restart, reset settings
-			if select_speed /= select_speed_reg then -- vedi linea 141,142 : se il controllo di valore oscillante fallisce lo considera non valido e resetta  --go back to lines 141,142: if the two values are different, we have a reset ( I (Laura) have a doubt)
+			-- Restart, rst settings
+			if select_speed /= select_speed_reg then -- vedi linea 141,142 : se il controllo di valore oscillante fallisce lo considera non valido e rstta  --go back to lines 141,142: if the two values are different, we have a rst ( I (Laura) have a doubt)
 				count_fine		<= 0;
 				count_coarse   <= 0;
-				sync           <= '0';
+				count_pulse           <= '0';
 			end if;
 
 
