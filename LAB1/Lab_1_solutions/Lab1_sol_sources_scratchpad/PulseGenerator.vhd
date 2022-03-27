@@ -11,12 +11,12 @@ library IEEE;
 -- NONE
 ------------------------------------
 
-entity ClockGenerator is
+entity PulseGenerator is
 	Generic(
 
 		CLK_PERIOD_NS			:	POSITIVE	RANGE	1	TO	100;	-- clk Period in nanoseconds
 		MIN_KITT_CAR_STEP_MS	:	POSITIVE	RANGE	1	TO	2000;	-- min step period in milliseconds
-
+		
 		NUM_OF_SWS		:	INTEGER	RANGE	1 TO 16 := 16				-- Switches used over the 16 in Basys3
 
 	);
@@ -34,49 +34,17 @@ entity ClockGenerator is
 
 	);
 
-end ClockGenerator;
+end PulseGenerator;
 
-architecture Behavioral of ClockGenerator is
-
-
-	---------------------- FUNCTION DECLARATION ----------------------
-
-	--------- Set Fine ----------
-	function   set_range_count_fine(SIMULATION_VS_IMPLEMENTATION   :   STRING(1 to 3)) return POSITIVE is
-
-		variable  RANGE_COUNT_FINE_IMP    :    POSITIVE    := ((MIN_KITT_CAR_STEP_MS*1000000)/CLK_PERIOD_NS);	-- Implementation
-		variable  RANGE_COUNT_FINE_SIM    :    POSITIVE    := ((MIN_KITT_CAR_STEP_MS*10)/CLK_PERIOD_NS);  		-- Simulation
-
-	begin
-
-
-		if SIMULATION_VS_IMPLEMENTATION = "IMP" then
-			return RANGE_COUNT_FINE_IMP;
-
-		elsif SIMULATION_VS_IMPLEMENTATION = "SIM" then
-			return RANGE_COUNT_FINE_SIM;
-
-		else
-			return  1;
-
-		end if;
-
-	end function;
-	----------------------------
-
-	-----------------------------------------------------------------
+architecture Behavioral of PulseGenerator is
 
 
 	------------------ CONSTANT DECLARATION -------------------------
 
     ---------- TIMER -----------
-    constant RANGE_COUNT_FINE		: POSITIVE		:= set_range_count_fine(SIMULATION_VS_IMPLEMENTATION); 
-	
-	
+	constant RANGE_COUNT_FINE		: POSITIVE		:= ((MIN_KITT_CAR_STEP_MS*10)/CLK_PERIOD_NS);  		-- Simulation
 	-- numero di incrementi del contatore per arrivare ad Dt0 -- number of counter's steps to reach teh Dt0
     constant RANGE_COUNT_COARSE		: POSITIVE		:= 2**NUM_OF_SWS -1;
-	
-	
 	-- numero massimo rappresentabile dagli switch come input -- max number that can be set throught the switches
 	-- 
     ----------------------------
@@ -89,13 +57,22 @@ architecture Behavioral of ClockGenerator is
 
 	----- Counter Registers ----
 	signal	count_fine		:	INTEGER	RANGE	0	TO	RANGE_COUNT_FINE-1		:= 0;
+	
 	-- contatatore che conta fino al passare di un Dt0 -- counter that counts until Dt0
+	
 	signal	count_coarse	:	INTEGER	RANGE	0	TO	RANGE_COUNT_COARSE-1	:= 0;
+	
+	
 	-- contatore che conta i Dt0 fino al passare del numero di Dt0 selezionato con gli switch -- counter that counts the Dt0 until the number of Dt0 selected throught the switches
 
 	signal	select_speed	   :	INTEGER	RANGE	0	TO	RANGE_COUNT_COARSE-1	:= 1;
+	
 	-- segnale di sample del valora unsigned rappresentato dagli switches -- sample signal of the value of the unsigned selected throught the switches
+	
+	
 	signal	select_speed_reg   :	INTEGER	RANGE	0	TO	RANGE_COUNT_COARSE-1	:= 1;
+	
+	
 	-- segnale di sample del valora unsigned rappresentato dagli switches registrato per stabilità -- sample signal of the value of the unsigned selected throught the switches, registered for stability
 
 	----------------------------
@@ -175,10 +152,5 @@ begin
 		end if;
 
 	end process;
-
-	----------------------------
-
-	-------------------------------------------------------------------
-
 
 end Behavioral;
