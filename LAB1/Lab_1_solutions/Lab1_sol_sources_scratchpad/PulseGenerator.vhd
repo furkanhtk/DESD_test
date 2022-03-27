@@ -8,10 +8,10 @@ library IEEE;
 entity PulseGenerator is
 	Generic(
 
-		CLK_PERIOD_NS			:	positive	range	1	to	100;	-- clk Period in nanoseconds
+		CLK_PERIOD_NS			:	positive    range	1	to	100;	-- clk Period in nanoseconds
 		MIN_KITT_CAR_STEP_MS	:	positive	range	1	to	2000;	-- min step period in milliseconds
 		
-		NUM_OF_SWS		:	integer	range	1 to 16 := 16				-- Switches used over the 16 in Basys3
+		SW_NUMS		:	integer	range	1 to 16 := 16				-- Switches used over the 16 in Basys3
 
 	);
 	Port (
@@ -22,7 +22,7 @@ entity PulseGenerator is
 		----------------------------
 
 		---------- Speed -----------
-		SWs		    :	IN	STD_LOGIC_VECTOR(NUM_OF_SWS-1 downto 0);	-- Switches avaiable on Besys3
+		SWs		    :	IN	STD_LOGIC_VECTOR(SW_NUMS-1 downto 0);	-- Switches avaiable on Besys3
 		count_pulse	:	OUT	STD_LOGIC									-- signal which pulses when kit has to shift
 		----------------------------
 
@@ -39,7 +39,7 @@ architecture Behavioral of PulseGenerator is
 	constant RANGE_COUNT_FINE		: positive		:= ((MIN_KITT_CAR_STEP_MS*10)/CLK_PERIOD_NS);  		
 	-- Simulation
 	-- number of counter's steps to reach teh Dt0
-    constant RANGE_COUNT_COARSE		: positive		:= 2**NUM_OF_SWS -1;
+    constant RANGE_COUNT_COARSE		: positive		:= 2**SW_NUMS -1;
 	-- max number that can be set throught the switches
 
 
