@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar 24 17:52:08 2022
+# Process ID: 3644
+# Current directory: D:/Polimi/2.Semester/Digital Electronic Systems Design/Labs/DESD/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16388 D:\Polimi\2.Semester\Digital Electronic Systems Design\Labs\DESD\LAB1\Lab_1_solutions\Lab1_sol_proj\KittCarPWM\KittCarPWM.xpr
+# Log file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Labs/DESD/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/vivado.log
+# Journal file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Labs/DESD/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Polimi/2.Semester/Digital Electronic Systems Design/Labs/DESD/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.xpr}

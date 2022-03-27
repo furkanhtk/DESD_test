@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  7 09:15:52 2021
+# Process ID: 180893
+# Current directory: /home/pc-fisso
+# Command line: vivado
+# Log file: /home/pc-fisso/vivado.log
+# Journal file: /home/pc-fisso/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {/home/pc-fisso/Temp/LAB2/LAB 2/LAB2 - HomeAssigmement - Solution/color_to_grayscale.xpr/color_to_grayscale/color_to_grayscale.xpr}
+open_bd_design {/home/pc-fisso/Temp/LAB2/LAB 2/LAB2 - HomeAssigmement - Solution/color_to_grayscale.xpr/color_to_grayscale/color_to_grayscale.srcs/sources_1/bd/top_bd/top_bd.bd}
+update_compile_order -fileset sources_1
+close_bd_design [get_bd_designs top_bd]
+close_project
+open_project /home/pc-fisso/Temp/LAB2/color_to_grayscale.xpr/color_to_grayscale/color_to_grayscale.xpr
+report_ip_status -name ip_status 
+upgrade_ip [get_ips  {top_bd_util_vector_logic_0_0 top_bd_clk_wiz_0_0}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {top_bd_util_vector_logic_0_0 top_bd_clk_wiz_0_0}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+open_hw_manager
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+archive_project {/home/pc-fisso/Temp/LAB2 - HomeAssignement - Solution.xpr.zip} -force -include_local_ip_cache -include_config_settings
+close_bd_design [get_bd_designs top_bd]
+close_project
+open_project /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+archive_project {/home/pc-fisso/Temp/LAB1 - HomeAssignement - Solution.xpr.zip} -force -include_local_ip_cache -include_config_settings
