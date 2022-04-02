@@ -1,0 +1,428 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 28 15:33:36 2022
+# Process ID: 13436
+# Current directory: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1472 C:\Users\Utente\Documents\DESD\LAB1\KittCarPWM\KittCarPWM.xpr
+# Log file: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/vivado.log
+# Journal file: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Mon Mar 28 15:34:54 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Mar 28 15:35:26 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+add_files -norecurse C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Mon Mar 28 15:39:51 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 15:39:51 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Mar 28 15:40:59 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+file mkdir C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1
+file mkdir C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1/new
+close [ open C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1/new/constraints.xdc
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Mon Mar 28 15:45:29 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 15:45:29 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 28 15:46:49 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-22:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1202.574 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B03734A
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2682.652 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2791.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 2917.629 ; gain = 522.316
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Mar 28 15:50:02 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 15:50:02 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Mon Mar 28 15:53:13 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 15:53:13 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3381.961 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 3558.160 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 3558.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3558.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_design synth_1
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: KittCarPWM
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3763.668 ; gain = 83.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'KittCarPWM' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:25]
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'PulseGenerator' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd:6' bound to instance 'pulsGen_inst' of component 'pulseGenerator' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'PulseGenerator' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd:23]
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PulseGenerator' (1#1) [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd:23]
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'KittCar' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCar.vhd:9' bound to instance 'KittCar_inst' of component 'KittCar' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'KittCar' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCar.vhd:31]
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'KittCar' (2#1) [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCar.vhd:31]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'LedController' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:21]
+	Parameter TailLength bound to: 4 - type: integer 
+WARNING: [Synth 8-3819] Generic 'tail_length' not present in instantiated entity will be ignored [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter BIT_LENGTH bound to: 4 - type: integer 
+	Parameter T_ON_INIT bound to: 1 - type: integer 
+	Parameter PERIOD_INIT bound to: 4 - type: integer 
+	Parameter PWM_INIT bound to: 1'b1 
+INFO: [Synth 8-3491] module 'PulseWidthModulator' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseWidthModulator.vhd:16' bound to instance 'inst_PulseWidthModulator' of component 'PulseWidthModulator' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'PulseWidthModulator' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseWidthModulator.vhd:43]
+	Parameter BIT_LENGTH bound to: 4 - type: integer 
+	Parameter T_ON_INIT bound to: 1 - type: integer 
+	Parameter PERIOD_INIT bound to: 4 - type: integer 
+	Parameter PWM_INIT bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'PulseWidthModulator' (3#1) [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseWidthModulator.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'LedController' (4#1) [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:21]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TAIL_LENGTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'KittCarPWM' (5#1) [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3806.051 ; gain = 126.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3823.977 ; gain = 144.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3823.977 ; gain = 144.246
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 3823.977 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3931.996 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3960.000 ; gain = 280.270
+31 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3960.000 ; gain = 280.270
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 28 16:01:47 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 16:01:47 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 28 16:06:49 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 16:06:49 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 28 16:10:24 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 16:10:24 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 28 16:12:57 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 16:12:57 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Mon Mar 28 16:16:52 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 16:16:52 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Mar 28 16:19:13 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Mar 28 16:20:37 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 16:20:37 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+current_design impl_1
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4037.090 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 4037.090 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 4037.090 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Mon Mar 28 16:24:52 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 16:24:52 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Mar 28 16:26:12 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Mon Mar 28 16:28:00 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 16:28:00 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Mar 28 16:29:22 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Mon Mar 28 16:31:46 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+[Mon Mar 28 16:31:46 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Mar 28 16:33:15 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon Mar 28 16:35:37 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon Mar 28 16:36:39 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Mar 28 16:37:47 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/impl_1/KittCarPWM.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 28 16:39:14 2022...

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.tcl"
+  variable script "D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,28 +70,31 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
+set_param chipscope.maxJobs 4
+set_param synth.incrementalSynthesisCache {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/.Xil/Vivado-11888-DESKTOP-H0DGSC9/incrSyn}
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.cache/wt [current_project]
-set_property parent.project_path /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.xpr [current_project]
+set_property webtalk.parent_dir {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.cache/wt} [current_project]
+set_property parent.project_path {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.cache/ip [current_project]
+set_property ip_output_repo {d:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd
-  /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd
-  /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd
-  /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd
-  /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd
+  {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd}
+  {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd}
+  {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd}
+  {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd}
+  {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd}
+  {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -102,8 +105,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc
-set_property used_in_implementation false [get_files /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]
+read_xdc {{D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc}}
+set_property used_in_implementation false [get_files {{D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

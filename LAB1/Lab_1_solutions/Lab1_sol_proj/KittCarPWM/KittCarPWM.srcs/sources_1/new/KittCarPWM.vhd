@@ -101,10 +101,8 @@ architecture Behavioral of KittCarPWM is
 
 	--------- SYNC -------------
 
-	Component SyncGenerator is
+	Component PulseGenerator is
 		Generic(
-
-		   	SIMULATION_VS_IMPLEMENTATION    :   STRING(1 to 3) := "SIM";    -- "SIM" or "IMP"
 
 			CLK_PERIOD_NS			:	POSITIVE	RANGE	1	TO	100;	-- clk Period in nanoseconds
 			MIN_KITT_CAR_STEP_MS	:	POSITIVE	RANGE	1	TO	2000;	-- min step period in milliseconds
@@ -115,13 +113,13 @@ architecture Behavioral of KittCarPWM is
 		Port (
 
 			------- Reset/Clock --------
-			reset	:	IN	STD_LOGIC;
+			rst	:	IN	STD_LOGIC;
 			clk		:	IN	STD_LOGIC;
 			----------------------------
 
 			---------- Speed -----------
-			SWs		:	IN	STD_LOGIC_VECTOR(NUM_OF_SWS-1 downto 0);	-- Switches avaiable on Besys3
-			sync	:	OUT	STD_LOGIC
+			switches		:	IN	STD_LOGIC_VECTOR(NUM_OF_SWS-1 downto 0);	-- Switches avaiable on Besys3
+			count_pulse	:	OUT	STD_LOGIC
 			----------------------------
 
 		);
@@ -217,10 +215,10 @@ begin
 
 	--------- SYNC -------------
 
-	Inst_SyncGenerator	:	SyncGenerator
+	Inst_SyncGenerator	:	PulseGenerator
 	Generic Map(
 
-	   	SIMULATION_VS_IMPLEMENTATION    =>  	   SIMULATION_VS_IMPLEMENTATION,
+	   	
 
 		CLK_PERIOD_NS			=>	CLK_PERIOD_NS,
 		MIN_KITT_CAR_STEP_MS	=>	MIN_KITT_CAR_STEP_MS,
@@ -231,13 +229,13 @@ begin
 	Port Map(
 
 		------- Reset/Clock --------
-		reset	=>	reset,
+		rst	=>	reset,
 		clk		=>	clk,
 		----------------------------
 
 		---------- Speed -----------
-		SWs		=>	SWs,
-		sync	=>	sync
+		switches		=>	SWs,
+		count_pulse	=>	sync
 		----------------------------
 
 	);

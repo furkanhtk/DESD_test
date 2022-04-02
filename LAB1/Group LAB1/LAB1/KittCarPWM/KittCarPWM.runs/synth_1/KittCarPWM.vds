@@ -1,0 +1,293 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 28 16:35:39 2022
+# Process ID: 3304
+# Current directory: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1
+# Command line: vivado.exe -log KittCarPWM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source KittCarPWM.tcl
+# Log file: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.vds
+# Journal file: C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source KittCarPWM.tcl -notrace
+Command: synth_design -top KittCarPWM -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12256
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'KittCarPWM' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:25]
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+	Parameter TAIL_LENGTH bound to: 1 - type: integer 
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'PulseGenerator' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd:6' bound to instance 'pulsGen_inst' of component 'pulseGenerator' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'PulseGenerator' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd:23]
+	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
+	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
+	Parameter NUM_OF_SWS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PulseGenerator' (1#1) [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd:23]
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+INFO: [Synth 8-3491] module 'KittCar' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCar.vhd:9' bound to instance 'KittCar_inst' of component 'KittCar' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'KittCar' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCar.vhd:31]
+	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'KittCar' (2#1) [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCar.vhd:31]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'LedController' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:21]
+	Parameter TailLength bound to: 1 - type: integer 
+	Parameter BIT_LENGTH bound to: 4 - type: integer 
+	Parameter T_ON_INIT bound to: 1 - type: integer 
+	Parameter PERIOD_INIT bound to: 1 - type: integer 
+	Parameter PWM_INIT bound to: 1'b1 
+INFO: [Synth 8-3491] module 'PulseWidthModulator' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseWidthModulator.vhd:16' bound to instance 'inst_PulseWidthModulator' of component 'PulseWidthModulator' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'PulseWidthModulator' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseWidthModulator.vhd:43]
+	Parameter BIT_LENGTH bound to: 4 - type: integer 
+	Parameter T_ON_INIT bound to: 1 - type: integer 
+	Parameter PERIOD_INIT bound to: 1 - type: integer 
+	Parameter PWM_INIT bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'PulseWidthModulator' (3#1) [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseWidthModulator.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'LedController' (4#1) [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:21]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+	Parameter TailLength bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'LedController' declared at 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/LedController.vhd:6' bound to instance 'LEDcontroller_inst' of component 'LEDcontroller' [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'KittCarPWM' (5#1) [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:25]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1044.844 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/KittCarPWM_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/KittCarPWM_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1044.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   17 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 32    
+	   2 Input    1 Bit       Adders := 16    
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	                4 Bit    Registers := 48    
+	                1 Bit    Registers := 50    
++---Muxes : 
+	   2 Input   17 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 16    
+	   2 Input    2 Bit        Muxes := 16    
+	   3 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 128   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT2   |     5|
+|4     |LUT3   |    16|
+|5     |LUT4   |    10|
+|6     |LUT5   |    47|
+|7     |LUT6   |    20|
+|8     |FDCE   |    79|
+|9     |FDPE   |     4|
+|10    |FDRE   |    32|
+|11    |FDSE   |     1|
+|12    |IBUF   |    18|
+|13    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1044.844 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 1044.844 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 1044.844 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1044.844 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1044.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 1044.844 ; gain = 45.133
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Utente/Documents/DESD/LAB1/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file KittCarPWM_utilization_synth.rpt -pb KittCarPWM_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 28 16:36:34 2022...

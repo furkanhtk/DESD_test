@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc rfile:../../../KittCarPWM.srcs/constrs_1/new/basys3.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc} rfile:../../../KittCarPWM.srcs/constrs_1/new/basys3.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clk]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

@@ -3,8 +3,9 @@
     with args -log KittCarPWM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source KittCarPWM.tcl
 
 
+
 ****** Vivado v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
   **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
@@ -14,13 +15,13 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 189977
+INFO: [Synth 8-7075] Helper process launched with PID 24040
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2294.352 ; gain = 0.000 ; free physical = 171 ; free virtual = 4318
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1016.188 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'KittCarPWM' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'KittCarPWM' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:51]
 	Parameter SIMULATION_VS_IMPLEMENTATION bound to: IMP - type: string 
 	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
 	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
@@ -28,114 +29,112 @@ INFO: [Synth 8-638] synthesizing module 'KittCarPWM' [/home/pc-fisso/Downloads/L
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
 	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
-INFO: [Synth 8-638] synthesizing module 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:39]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:39]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
 	Parameter BIT_LENGTH bound to: 4 - type: integer 
 	Parameter T_ON_INIT bound to: 1 - type: integer 
 	Parameter PERIOD_INIT bound to: 4 - type: integer 
 	Parameter PWM_INIT bound to: 1'b1 
-INFO: [Synth 8-3491] module 'PulseWidthModulator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:17' bound to instance 'Inst_PulseWidthModulator' of component 'PulseWidthModulator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:167]
-INFO: [Synth 8-638] synthesizing module 'PulseWidthModulator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:44]
+INFO: [Synth 8-3491] module 'PulseWidthModulator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:17' bound to instance 'Inst_PulseWidthModulator' of component 'PulseWidthModulator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'PulseWidthModulator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:44]
 	Parameter BIT_LENGTH bound to: 4 - type: integer 
 	Parameter T_ON_INIT bound to: 1 - type: integer 
 	Parameter PERIOD_INIT bound to: 4 - type: integer 
 	Parameter PWM_INIT bound to: 1'b1 
-INFO: [Synth 8-256] done synthesizing module 'PulseWidthModulator' (1#1) [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'TailGenerator' (2#1) [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'PulseWidthModulator' (1#1) [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/imports/PulseWidthModulator.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'TailGenerator' (2#1) [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:39]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter TAIL_LENGTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'TailGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:190]
-	Parameter SIMULATION_VS_IMPLEMENTATION bound to: IMP - type: string 
+INFO: [Synth 8-3491] module 'TailGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/TailGenerator.vhd:15' bound to instance 'Inst_TailGenerator' of component 'TailGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:188]
 	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
 	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
 	Parameter NUM_OF_SWS bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'SyncGenerator' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd:14' bound to instance 'Inst_SyncGenerator' of component 'SyncGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:220]
-INFO: [Synth 8-638] synthesizing module 'SyncGenerator' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd:41]
-	Parameter SIMULATION_VS_IMPLEMENTATION bound to: IMP - type: string 
+INFO: [Synth 8-3491] module 'PulseGenerator' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd:8' bound to instance 'Inst_SyncGenerator' of component 'PulseGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'PulseGenerator' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd:33]
 	Parameter CLK_PERIOD_NS bound to: 10 - type: integer 
 	Parameter MIN_KITT_CAR_STEP_MS bound to: 1 - type: integer 
 	Parameter NUM_OF_SWS bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'SyncGenerator' (3#1) [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/SyncGenerator.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'PulseGenerator' (3#1) [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd:33]
 	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'KittCar' declared at '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:15' bound to instance 'Inst_KittCar' of component 'KittCar' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:250]
-INFO: [Synth 8-638] synthesizing module 'KittCar' [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:39]
+INFO: [Synth 8-3491] module 'KittCar' declared at 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:15' bound to instance 'Inst_KittCar' of component 'KittCar' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:248]
+INFO: [Synth 8-638] synthesizing module 'KittCar' [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:39]
 	Parameter NUM_OF_LEDS bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'KittCar' (4#1) [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'KittCarPWM' (5#1) [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'KittCar' (4#1) [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/imports/KittCar.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'KittCarPWM' (5#1) [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd:51]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2294.352 ; gain = 0.000 ; free physical = 960 ; free virtual = 4899
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.188 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2294.352 ; gain = 0.000 ; free physical = 997 ; free virtual = 4938
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.188 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2294.352 ; gain = 0.000 ; free physical = 997 ; free virtual = 4938
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1016.188 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2294.352 ; gain = 0.000 ; free physical = 990 ; free virtual = 4931
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1016.188 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]
-Finished Parsing XDC File [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/KittCarPWM_propImpl.xdc].
+Parsing XDC File [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/KittCarPWM_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/KittCarPWM_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2396.004 ; gain = 0.000 ; free physical = 895 ; free virtual = 4848
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1049.656 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2396.004 ; gain = 0.000 ; free physical = 895 ; free virtual = 4848
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1049.656 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 957 ; free virtual = 4912
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1049.656 ; gain = 33.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 957 ; free virtual = 4912
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1049.656 ; gain = 33.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 960 ; free virtual = 4915
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1049.656 ; gain = 33.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 947 ; free virtual = 4905
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1049.656 ; gain = 33.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -148,7 +147,7 @@ Detailed RTL Component Info :
 	   2 Input    3 Bit       Adders := 16    
 +---Registers : 
 	               17 Bit    Registers := 1     
-	               16 Bit    Registers := 4     
+	               16 Bit    Registers := 5     
 	                4 Bit    Registers := 48    
 	                3 Bit    Registers := 16    
 	                1 Bit    Registers := 34    
@@ -176,25 +175,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 938 ; free virtual = 4901
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1049.656 ; gain = 33.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 795 ; free virtual = 4767
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1049.656 ; gain = 33.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 792 ; free virtual = 4764
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1050.812 ; gain = 34.625
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 791 ; free virtual = 4763
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1051.793 ; gain = 35.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -212,37 +211,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 781 ; free virtual = 4753
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1058.793 ; gain = 42.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 781 ; free virtual = 4753
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1058.793 ; gain = 42.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 781 ; free virtual = 4753
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1058.793 ; gain = 42.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 781 ; free virtual = 4753
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1058.793 ; gain = 42.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 781 ; free virtual = 4753
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1058.793 ; gain = 42.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 780 ; free virtual = 4753
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1058.793 ; gain = 42.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -266,32 +265,32 @@ Report Cell Usage:
 |6     |LUT4   |    81|
 |7     |LUT5   |     4|
 |8     |LUT6   |   153|
-|9     |FDCE   |   255|
-|10    |FDPE   |    19|
+|9     |FDCE   |   270|
+|10    |FDPE   |    20|
 |11    |FDRE   |     1|
 |12    |IBUF   |    18|
 |13    |OBUF   |    16|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 780 ; free virtual = 4753
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1058.793 ; gain = 42.605
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2396.004 ; gain = 0.000 ; free physical = 831 ; free virtual = 4804
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2396.004 ; gain = 101.652 ; free physical = 831 ; free virtual = 4804
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 1058.793 ; gain = 9.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1058.793 ; gain = 42.605
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2396.004 ; gain = 0.000 ; free physical = 915 ; free virtual = 4887
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1070.859 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2396.004 ; gain = 0.000 ; free physical = 875 ; free virtual = 4848
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1071.848 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 44 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:34 . Memory (MB): peak = 2396.004 ; gain = 101.812 ; free physical = 1020 ; free virtual = 4993
-INFO: [Common 17-1381] The checkpoint '/home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1071.848 ; gain = 55.660
+INFO: [Common 17-1381] The checkpoint 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file KittCarPWM_utilization_synth.rpt -pb KittCarPWM_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May  7 09:33:31 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 27 18:55:08 2022...

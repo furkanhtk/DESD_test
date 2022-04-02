@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Fri May  7 09:34:17 2021
-| Host         : pcfisso running 64-bit Ubuntu 20.04.2 LTS
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun Mar 27 18:55:47 2022
+| Host         : DESKTOP-H0DGSC9 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file KittCarPWM_control_sets_placed.rpt
 | Design       : KittCarPWM
 | Device       : xc7a35t
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               1 |            1 |
-| No           | No                    | Yes                    |             226 |           60 |
+| No           | No                    | Yes                    |             242 |           62 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              48 |           24 |
+| Yes          | No                    | Yes                    |              48 |           26 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -73,26 +73,26 @@ Table of Contents
 +----------------+-----------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
 |  Clock Signal  |                                Enable Signal                                | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
 +----------------+-----------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG | GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__8_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__3_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/p_0_in               | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__2_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__1_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__0_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__14_n_0 | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__13_n_0 | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__12_n_0 | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__11_n_0 | reset_IBUF       |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG |                                                                             |                  |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__7_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__6_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__5_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__4_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__10_n_0 | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[0].Inst_TailGenerator/Inst_PulseWidthModulator/p_0_in               | reset_IBUF       |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG | GenTail[10].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__9_n_0  | reset_IBUF       |                1 |              1 |         1.00 |
-|  clk_IBUF_BUFG | Inst_SyncGenerator/sync                                                     | reset_IBUF       |                5 |             16 |         3.20 |
-|  clk_IBUF_BUFG | Inst_SyncGenerator/count_coarse0                                            | reset_IBUF       |                3 |             16 |         5.33 |
-|  clk_IBUF_BUFG |                                                                             | reset_IBUF       |               60 |            226 |         3.77 |
+|  clk_IBUF_BUFG | GenTail[11].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__10_n_0 | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[5].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__4_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[6].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__5_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[7].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__6_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[8].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__7_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[9].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__8_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[12].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__11_n_0 | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[13].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__12_n_0 | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[14].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__13_n_0 | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[15].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__14_n_0 | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[1].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__0_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[2].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__1_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[3].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__2_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | GenTail[4].Inst_TailGenerator/Inst_PulseWidthModulator/pwm_reg_i_1__3_n_0   | reset_IBUF       |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | Inst_SyncGenerator/count_speed0                                             | reset_IBUF       |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG | Inst_SyncGenerator/sync                                                     | reset_IBUF       |                7 |             16 |         2.29 |
+|  clk_IBUF_BUFG |                                                                             | reset_IBUF       |               62 |            242 |         3.90 |
 +----------------+-----------------------------------------------------------------------------+------------------+------------------+----------------+--------------+
 
 

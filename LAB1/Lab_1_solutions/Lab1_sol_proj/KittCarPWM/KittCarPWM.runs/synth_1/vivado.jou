@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
 # Vivado v2020.2 (64-bit)
-# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri May  7 09:32:42 2021
-# Process ID: 189932
-# Current directory: /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.runs/synth_1
-# Command line: vivado -log KittCarPWM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source KittCarPWM.tcl
-# Log file: /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.vds
-# Journal file: /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.runs/synth_1/vivado.jou
+# Start of session at: Sun Mar 27 18:54:38 2022
+# Process ID: 21192
+# Current directory: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.runs/synth_1
+# Command line: vivado.exe -log KittCarPWM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source KittCarPWM.tcl
+# Log file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.vds
+# Journal file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source KittCarPWM.tcl -notrace

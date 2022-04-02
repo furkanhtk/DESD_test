@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri May  7 09:32:42 2021
+# Process ID: 189932
+# Current directory: /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.runs/synth_1
+# Command line: vivado -log KittCarPWM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source KittCarPWM.tcl
+# Log file: /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.runs/synth_1/KittCarPWM.vds
+# Journal file: /home/pc-fisso/Downloads/LAB1_02_KittCarPWM_proj.xpr/KittCarPWM/KittCarPWM.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source KittCarPWM.tcl -notrace

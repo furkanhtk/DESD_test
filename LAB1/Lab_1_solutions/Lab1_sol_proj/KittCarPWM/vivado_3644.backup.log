@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Mar 24 17:52:08 2022
+# Process ID: 3644
+# Current directory: D:/Polimi/2.Semester/Digital Electronic Systems Design/Labs/DESD/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16388 D:\Polimi\2.Semester\Digital Electronic Systems Design\Labs\DESD\LAB1\Lab_1_solutions\Lab1_sol_proj\KittCarPWM\KittCarPWM.xpr
+# Log file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Labs/DESD/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/vivado.log
+# Journal file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Labs/DESD/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Polimi/2.Semester/Digital Electronic Systems Design/Labs/DESD/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM/KittCarPWM.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Labs/DESD/LAB1/Lab_1_solutions/Lab1_sol_proj/KittCarPWM'
+INFO: [Project 1-313] Project file moved from '/home/pc-fisso/.Xil/Vivado-180893-pcfisso/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Board 49-67] The board_part definition was not found for digilentinc.com:basys3:part0:1.1. This can happen sometimes when you use custom board part. You can resolve this issue by setting 'board.repoPaths' parameter, pointing to the location of custom board files. Valid board_part values can be retrieved with the 'get_board_parts' Tcl command.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 1021.160 ; gain = 0.000

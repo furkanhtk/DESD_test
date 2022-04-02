@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date             : Fri May  7 09:34:34 2021
-| Host             : pcfisso running 64-bit Ubuntu 20.04.2 LTS
+| Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date             : Sun Mar 27 18:56:04 2022
+| Host             : DESKTOP-H0DGSC9 running 64-bit major release  (build 9200)
 | Command          : report_power -file KittCarPWM_power_routed.rpt -pb KittCarPWM_power_summary_routed.pb -rpx KittCarPWM_power_routed.rpx
 | Design           : KittCarPWM
 | Device           : xc7a35tcpg236-1
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |      634 |       --- |             --- |
+| Slice Logic    |     0.002 |      650 |       --- |             --- |
 |   LUT as Logic |     0.002 |      247 |     20800 |            1.19 |
-|   Register     |    <0.001 |      275 |     41600 |            0.66 |
+|   Register     |    <0.001 |      291 |     41600 |            0.70 |
 |   CARRY4       |    <0.001 |       12 |      8150 |            0.15 |
 |   Others       |     0.000 |       36 |       --- |             --- |
-| Signals        |     0.001 |      434 |       --- |             --- |
+| Signals        |     0.001 |      449 |       --- |             --- |
 | I/O            |     0.005 |       34 |       106 |           32.08 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.082 |          |           |                 |
