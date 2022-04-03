@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr  3 18:14:40 2022
+# Process ID: 756
+# Current directory: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19992 D:\Polimi\2.Semester\Digital Electronic Systems Design\Lab Furkan Test Local Files\LAB1\Group LAB1\LAB1\KittCarPWM\KittCarPWM.xpr
+# Log file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM/vivado.log
+# Journal file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM/KittCarPWM.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source KittCarPWM.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_PulseGenerator [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+close_sim

@@ -1,0 +1,1 @@
+-wto "e08d4ec39cab41adb74143b3e862036c" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_PulseGenerator_behav" "xil_defaultlib.tb_PulseGenerator" -log "elaborate.log" 

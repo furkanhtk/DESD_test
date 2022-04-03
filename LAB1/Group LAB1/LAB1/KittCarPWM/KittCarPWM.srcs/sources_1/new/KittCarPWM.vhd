@@ -14,7 +14,7 @@ entity KittCarPWM is
 	);
 	Port (
 		--standard signals
-		reset	:	IN	STD_LOGIC;
+		reset   	:	IN	STD_LOGIC;
 		clk		:	IN	STD_LOGIC;
 		-- LEDs/SWs 
 		sw		:	IN	STD_LOGIC_VECTOR(NUM_OF_SWS-1 downto 0);	-- Switches avaiable on Basys3
