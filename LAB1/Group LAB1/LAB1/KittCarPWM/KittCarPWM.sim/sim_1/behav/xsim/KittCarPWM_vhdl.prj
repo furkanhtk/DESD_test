@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../KittCarPWM.srcs/sources_1/new/KittCar.vhd" \
+"../../../../KittCarPWM.srcs/sources_1/new/LedController.vhd" \
+"../../../../KittCarPWM.srcs/sources_1/new/PulseGenerator.vhd" \
+"../../../../KittCarPWM.srcs/sources_1/new/PulseWidthModulator.vhd" \
+"../../../../KittCarPWM.srcs/sources_1/new/KittCarPWM.vhd" \
+
+# Do not sort compile order
+nosort

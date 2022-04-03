@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Mar 28 13:48:04 2022
+# Process ID: 7908
+# Current directory: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/KittCar.xpr/KittCar
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7296 D:\Polimi\2.Semester\Digital Electronic Systems Design\Lab furkan test\KittCar.xpr\KittCar\KittCar.xpr
+# Log file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/KittCar.xpr/KittCar/vivado.log
+# Journal file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/KittCar.xpr/KittCar\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/KittCar.xpr/KittCar/KittCar.xpr}

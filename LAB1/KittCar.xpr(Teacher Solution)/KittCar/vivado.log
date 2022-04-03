@@ -2,21 +2,22 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Mar 28 13:48:04 2022
-# Process ID: 7908
-# Current directory: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/KittCar.xpr/KittCar
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7296 D:\Polimi\2.Semester\Digital Electronic Systems Design\Lab furkan test\KittCar.xpr\KittCar\KittCar.xpr
-# Log file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/KittCar.xpr/KittCar/vivado.log
-# Journal file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/KittCar.xpr/KittCar\vivado.jou
+# Start of session at: Sat Apr  2 22:17:29 2022
+# Process ID: 24264
+# Current directory: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/KittCar.xpr(Teacher Solution)/KittCar
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13752 D:\Polimi\2.Semester\Digital Electronic Systems Design\Lab Furkan Test Local Files\LAB1\KittCar.xpr(Teacher Solution)\KittCar\KittCar.xpr
+# Log file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/KittCar.xpr(Teacher Solution)/KittCar/vivado.log
+# Journal file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/KittCar.xpr(Teacher Solution)/KittCar\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/KittCar.xpr/KittCar/KittCar.xpr}
+open_project {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/KittCar.xpr(Teacher Solution)/KittCar/KittCar.xpr}
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/KittCar.xpr/KittCar'
+Current project path is 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/KittCar.xpr(Teacher Solution)/KittCar'
+INFO: [Project 1-313] Project file moved from 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab furkan test/KittCar.xpr/KittCar' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 28 14:42:52 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  2 22:18:00 2022...

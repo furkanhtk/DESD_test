@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr  2 22:12:10 2022
+# Process ID: 16624
+# Current directory: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1492 D:\Polimi\2.Semester\Digital Electronic Systems Design\Lab Furkan Test Local Files\LAB1\Group LAB1\LAB1\KittCarPWM\KittCarPWM.xpr
+# Log file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM/vivado.log
+# Journal file: D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM/KittCarPWM.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM'
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM/KittCarPWM.gen/sources_1'.
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'D:/Polimi/2.Semester/Digital Electronic Systems Design/Lab Furkan Test Local Files/LAB1/Group LAB1/LAB1/KittCarPWM/KittCarPWM.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  2 22:13:10 2022...
+_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  2 22:13:12 2022...
